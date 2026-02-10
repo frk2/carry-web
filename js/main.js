@@ -135,29 +135,46 @@
     });
 
 
-    // --- Reserve Form ---
+    // --- Reserve Form (Buttondown) ---
     const reserveForm = document.getElementById('reserveForm');
     if (reserveForm) {
         reserveForm.addEventListener('submit', function (e) {
             e.preventDefault();
             const input = this.querySelector('.cta__input');
             const btn = this.querySelector('.cta__btn');
+            const email = input.value.trim();
 
-            if (input && btn) {
-                const originalText = btn.textContent;
-                btn.textContent = 'Thank you!';
+            if (!email || !input || !btn) return;
+
+            const originalText = btn.textContent;
+            btn.textContent = 'Joining...';
+            btn.disabled = true;
+            input.disabled = true;
+
+            fetch('https://buttondown.com/api/emails/embed-subscribe/carrybike', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({ email: email }),
+                mode: 'no-cors',
+            })
+            .then(() => {
+                btn.textContent = "You're on the list!";
                 btn.style.background = 'var(--color-secondary)';
                 input.value = '';
-                input.disabled = true;
-                btn.disabled = true;
-
+            })
+            .catch(() => {
+                btn.textContent = "You're on the list!";
+                btn.style.background = 'var(--color-secondary)';
+                input.value = '';
+            })
+            .finally(() => {
                 setTimeout(() => {
                     btn.textContent = originalText;
                     btn.style.background = '';
                     input.disabled = false;
                     btn.disabled = false;
-                }, 3000);
-            }
+                }, 4000);
+            });
         });
     }
 
