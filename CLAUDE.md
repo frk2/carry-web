@@ -77,5 +77,5 @@ Product and lifestyle photos are in `images/`. All are PNGs sourced from `/home/
 
 ## Quality check
 - Make sure there are no empty links. Remove all links that don't have actual content
-- Change reserve to 'Sign up for early bird waitlist and take $1000 off'
+- Change reserve to 'Sign up for early bird waitlist'
 - Test rides available in SF Bay area on request
