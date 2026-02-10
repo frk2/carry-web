@@ -135,7 +135,7 @@
     });
 
 
-    // --- Reserve Form (Buttondown) ---
+    // --- Reserve Form (Buttondown API) ---
     const reserveForm = document.getElementById('reserveForm');
     if (reserveForm) {
         reserveForm.addEventListener('submit', function (e) {
@@ -151,21 +151,30 @@
             btn.disabled = true;
             input.disabled = true;
 
-            fetch('https://buttondown.com/api/emails/embed-subscribe/carrybike', {
+            fetch('https://api.buttondown.com/v1/subscribers', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams({ email: email }),
-                mode: 'no-cors',
+                headers: {
+                    'Authorization': 'Token ec064b1e-7757-48fb-968d-2d1dd5e892b4',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email_address: email }),
             })
-            .then(() => {
-                btn.textContent = "You're on the list!";
-                btn.style.background = 'var(--color-secondary)';
-                input.value = '';
+            .then((res) => res.json())
+            .then((data) => {
+                if (data.email_address || data.id) {
+                    btn.textContent = "You're on the list!";
+                    btn.style.background = 'var(--color-secondary)';
+                    input.value = '';
+                } else if (data.detail) {
+                    btn.textContent = 'Already signed up!';
+                    btn.style.background = 'var(--color-secondary)';
+                    input.value = '';
+                } else {
+                    btn.textContent = 'Something went wrong';
+                }
             })
             .catch(() => {
-                btn.textContent = "You're on the list!";
-                btn.style.background = 'var(--color-secondary)';
-                input.value = '';
+                btn.textContent = 'Something went wrong';
             })
             .finally(() => {
                 setTimeout(() => {
