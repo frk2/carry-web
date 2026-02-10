@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carry — The Electric Cargo Moped</title>
+    <meta name="description" content="Carry is the electric cargo moped that accelerates like nothing else on two wheels. 4kW motor, full suspension, 60-mile range. Designed and made in California.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600;12..96,700;12..96,800&family=Outfit:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#" class="nav__logo">CARRY</a>
+            <div class="nav__links" id="navLinks">
+                <a href="#features" class="nav__link">Features</a>
+                <a href="#gallery" class="nav__link">Gallery</a>
+                <a href="#specs" class="nav__link">Specs</a>
+                <a href="#faq" class="nav__link">FAQ</a>
+            </div>
+            <a href="#reserve" class="btn btn--sm btn--primary nav__cta">Join Waitlist</a>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__inner">
+            <a href="#features" class="mobile-menu__link">Features</a>
+            <a href="#gallery" class="mobile-menu__link">Gallery</a>
+            <a href="#specs" class="mobile-menu__link">Specs</a>
+            <a href="#faq" class="mobile-menu__link">FAQ</a>
+            <a href="#reserve" class="btn btn--primary btn--lg mobile-menu__cta">Join Waitlist</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="images/ParkedinPark.png" alt="Father riding Carry moped with two children through a sunny park" class="hero__bg-img">
+        </div>
+        <div class="hero__gradient"></div>
+        <div class="hero__content">
+            <div class="container">
+                <span class="hero__eyebrow reveal">This is not an e-bike</span>
+                <h1 class="hero__title reveal reveal--delay-1">
+                    Carry everything.<br>
+                    <span class="text-gradient">Go everywhere.</span>
+                </h1>
+                <p class="hero__subtitle reveal reveal--delay-2">
+                    A 4kW electric cargo moped that hits 30 mph instantly, rides on
+                    full suspension, and hauls your kids, groceries, or
+                    anything life throws at you. No pedals. No compromises.
+                </p>
+                <div class="hero__actions reveal reveal--delay-3">
+                    <a href="#reserve" class="btn btn--primary btn--lg">Join Waitlist — Save $1,000</a>
+                    <a href="#features" class="btn btn--ghost btn--lg">See Why It's Different
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span class="hero__scroll-text">Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat reveal">
+                    <div class="stat__number-wrap">
+                        <span class="stat__number" data-count="4">0</span>
+                        <span class="stat__unit">kW</span>
+                    </div>
+                    <span class="stat__label">Motor power</span>
+                </div>
+                <div class="stat reveal reveal--delay-1">
+                    <div class="stat__number-wrap">
+                        <span class="stat__number" data-count="30">0</span>
+                        <span class="stat__unit">mph</span>
+                    </div>
+                    <span class="stat__label">Instant acceleration</span>
+                </div>
+                <div class="stat reveal reveal--delay-2">
+                    <div class="stat__number-wrap">
+                        <span class="stat__number" data-count="60">0</span>
+                        <span class="stat__unit">mi</span>
+                    </div>
+                    <span class="stat__label">Range at full speed</span>
+                </div>
+                <div class="stat reveal reveal--delay-3">
+                    <div class="stat__number-wrap">
+                        <span class="stat__number stat__number--zero">0</span>
+                    </div>
+                    <span class="stat__label">Emissions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Why Carry is different</span>
+                <h2 class="section-title">Not another e-bike.<br>Not even close.</h2>
+            </div>
+        </div>
+
+        <!-- Feature 1: Cradle Frame -->
+        <div class="feature">
+            <div class="container">
+                <div class="feature__grid">
+                    <div class="feature__image reveal">
+                        <div class="feature__image-wrap">
+                            <img src="images/Carry2JustBike.png" alt="Carry moped showing step-through cradle frame with front cargo rack">
+                        </div>
+                    </div>
+                    <div class="feature__content reveal">
+                        <span class="feature__label">01 — Step-Through Cradle Frame</span>
+                        <h3 class="feature__title">Storage built into the frame</h3>
+                        <p class="feature__text">
+                            No pedals means the frame drops low — really low. The
+                            step-through cradle design creates a natural cargo bay between
+                            your legs for school bags, grocery runs, or your kid's soccer
+                            gear. Just step on, drop your stuff, and go.
+                        </p>
+                        <ul class="feature__list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="var(--color-primary)" opacity="0.12"/><path d="M6 10l3 3 5-6" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                Low center of gravity for extra stability
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="var(--color-primary)" opacity="0.12"/><path d="M6 10l3 3 5-6" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                Sit in the bike, not on top of it
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="var(--color-primary)" opacity="0.12"/><path d="M6 10l3 3 5-6" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                Easy flat-foot at every stop
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 2: Suspension -->
+        <div class="feature feature--reverse">
+            <div class="container">
+                <div class="feature__grid">
+                    <div class="feature__image reveal">
+                        <div class="feature__image-wrap">
+                            <img src="images/Carry2JustBikeWithSeat.png" alt="Carry moped with full suspension and rear passenger seat">
+                        </div>
+                    </div>
+                    <div class="feature__content reveal">
+                        <span class="feature__label">02 — Full Suspension</span>
+                        <h3 class="feature__title">Rides like a motorcycle</h3>
+                        <p class="feature__text">
+                            High-performance fork and rear shocks soak up every bump,
+                            crack, and pothole. Combined with a long wheelbase built for
+                            stability, Carry handles like nothing else in its class. No
+                            more jerky, white-knuckle rides.
+                        </p>
+                        <ul class="feature__list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="var(--color-primary)" opacity="0.12"/><path d="M6 10l3 3 5-6" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                High-performance fork &amp; rear shocks
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="var(--color-primary)" opacity="0.12"/><path d="M6 10l3 3 5-6" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                Extended wheelbase for stability
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="var(--color-primary)" opacity="0.12"/><path d="M6 10l3 3 5-6" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                Motorcycle-grade components throughout
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature 3: Power -->
+        <div class="feature">
+            <div class="container">
+                <div class="feature__grid">
+                    <div class="feature__image reveal">
+                        <div class="feature__image-wrap">
+                            <img src="images/carryonroad2.png" alt="Father and child riding Carry moped at speed on tree-lined road">
+                        </div>
+                    </div>
+                    <div class="feature__content reveal">
+                        <span class="feature__label">03 — Unapologetically Electric</span>
+                        <h3 class="feature__title">Instant to 30 mph</h3>
+                        <p class="feature__text">
+                            A 4kW motor delivers the kind of acceleration that makes
+                            e-bikes feel like toys. You won't clog traffic on a hill —
+                            you'll fly up it. The giant 2kWh battery powers 60 miles at
+                            full speed, and there are zero pedals to pretend otherwise.
+                        </p>
+                        <ul class="feature__list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="var(--color-primary)" opacity="0.12"/><path d="M6 10l3 3 5-6" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                4kW motor — as fast as cars on surface streets
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="var(--color-primary)" opacity="0.12"/><path d="M6 10l3 3 5-6" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                2kWh battery — 60 miles at full speed
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="var(--color-primary)" opacity="0.12"/><path d="M6 10l3 3 5-6" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                No pedals — pure electric, pure throttle
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">See it in action</span>
+                <h2 class="section-title">Life on a Carry</h2>
+            </div>
+        </div>
+        <div class="gallery__grid">
+            <div class="gallery__item gallery__item--large reveal">
+                <img src="images/Carryonroad.png" alt="Carry moped in motion on open road">
+                <div class="gallery__overlay">
+                    <span class="gallery__caption">Daily commute, reimagined</span>
+                </div>
+            </div>
+            <div class="gallery__item reveal reveal--delay-1">
+                <img src="images/ParkedinPark2.png" alt="Family outing on Carry moped in the park">
+                <div class="gallery__overlay">
+                    <span class="gallery__caption">Weekend adventures</span>
+                </div>
+            </div>
+            <div class="gallery__item reveal reveal--delay-2">
+                <img src="images/ParkedinPark3.png" alt="Father and children enjoying a park ride">
+                <div class="gallery__overlay">
+                    <span class="gallery__caption">Quality time, on the move</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs -->
+    <section class="specs" id="specs">
+        <div class="container">
+            <div class="specs__layout">
+                <div class="specs__visual reveal">
+                    <img src="images/JustBike.png" alt="Carry moped — full product view" class="specs__image">
+                </div>
+                <div class="specs__content reveal">
+                    <span class="section-label section-label--light">Technical specifications</span>
+                    <h2 class="section-title section-title--light">The details</h2>
+                    <div class="specs__table">
+                        <div class="spec-row">
+                            <span class="spec-row__label">Motor</span>
+                            <span class="spec-row__value">4kW continuous</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-row__label">Battery</span>
+                            <span class="spec-row__value">2kWh lithium-ion</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-row__label">Range</span>
+                            <span class="spec-row__value">60 miles at full speed</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-row__label">Top Speed</span>
+                            <span class="spec-row__value">30 mph</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-row__label">Suspension</span>
+                            <span class="spec-row__value">Full — HP fork &amp; rear shocks</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-row__label">Frame</span>
+                            <span class="spec-row__value">Step-through chromoly steel cradle</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-row__label">Wheelbase</span>
+                            <span class="spec-row__value">Extended for stability</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-row__label">Brakes</span>
+                            <span class="spec-row__value">Hydraulic disc, front &amp; rear</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-row__label">Tires</span>
+                            <span class="spec-row__value">Motorcycle-grade all-terrain</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-row__label">Pedals</span>
+                            <span class="spec-row__value">None — pure electric throttle</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-row__label">Maintenance</span>
+                            <span class="spec-row__value">None required</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Common questions</span>
+                <h2 class="section-title">FAQ</h2>
+            </div>
+            <div class="faq__grid">
+                <div class="faq__item reveal">
+                    <h3 class="faq__question">Do I need a driver's license?</h3>
+                    <p class="faq__answer">Yes. Carry is a moped, not an e-bike, so a valid driver's license is required to ride.</p>
+                </div>
+                <div class="faq__item reveal reveal--delay-1">
+                    <h3 class="faq__question">Is it safer than an e-bike?</h3>
+                    <p class="faq__answer">Significantly. Carry is built with a heavy-duty steel frame, motorcycle-grade tires, and full suspension components designed to handle real roads at real speeds.</p>
+                </div>
+                <div class="faq__item reveal reveal--delay-2">
+                    <h3 class="faq__question">Why is it so stable?</h3>
+                    <p class="faq__answer">The low center of gravity, extended wheelbase, and wide motorcycle tires give Carry a planted, confident feel — even fully loaded with cargo and passengers. You can easily flat-foot at every stop.</p>
+                </div>
+                <div class="faq__item reveal reveal--delay-3">
+                    <h3 class="faq__question">What maintenance does it need?</h3>
+                    <p class="faq__answer">None. No chain, no gears, no oil changes, no tune-ups. Electric means virtually zero maintenance. Just charge and ride.</p>
+                </div>
+                <div class="faq__item reveal">
+                    <h3 class="faq__question">Can I test ride one?</h3>
+                    <p class="faq__answer">Yes — test rides are available in the SF Bay Area on request. Join the waitlist and we'll set one up.</p>
+                </div>
+                <div class="faq__item reveal reveal--delay-1">
+                    <h3 class="faq__question">Why no pedals?</h3>
+                    <p class="faq__answer">Removing pedals is what makes everything else possible. It drops the seating position low to the ground, opens up the cradle frame for storage, and lets you sit in the bike rather than perched on top of it. It's a better ride in every way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Designed in California -->
+    <section class="origin">
+        <div class="container">
+            <div class="origin__inner reveal">
+                <div class="origin__flag">
+                    <svg width="48" height="32" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="60" height="40" rx="3" fill="#B22234"/>
+                        <rect y="3.08" width="60" height="3.08" fill="white"/>
+                        <rect y="9.23" width="60" height="3.08" fill="white"/>
+                        <rect y="15.38" width="60" height="3.08" fill="white"/>
+                        <rect y="21.54" width="60" height="3.08" fill="white"/>
+                        <rect y="27.69" width="60" height="3.08" fill="white"/>
+                        <rect y="33.85" width="60" height="3.08" fill="white"/>
+                        <rect width="24" height="21.54" fill="#3C3B6E"/>
+                    </svg>
+                </div>
+                <h2 class="origin__title">Designed in California. Made in California.</h2>
+                <p class="origin__desc">
+                    Built by parents, for parents. We got tired of choosing between
+                    flimsy e-bikes and gas-guzzling cars for the school run. So we
+                    built something better — right here in California.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist CTA -->
+    <section class="cta" id="reserve">
+        <div class="cta__bg">
+            <img src="images/Carryonroad.png" alt="" class="cta__bg-img" aria-hidden="true">
+        </div>
+        <div class="cta__overlay"></div>
+        <div class="container">
+            <div class="cta__content reveal">
+                <h2 class="cta__title">Ready to Carry?</h2>
+                <p class="cta__subtitle">
+                    Sign up for the early bird waitlist and take $1,000 off.
+                    Test rides available in the SF Bay Area on request.
+                </p>
+                <form class="cta__form" id="reserveForm">
+                    <div class="cta__form-row">
+                        <input type="email" placeholder="you@email.com" class="cta__input" required aria-label="Email address">
+                        <button type="submit" class="btn btn--primary btn--lg cta__btn">Join Waitlist — Save $1,000</button>
+                    </div>
+                    <p class="cta__fine-print">No commitment. We'll email you when your Carry is ready to ride.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">CARRY</a>
+                    <p class="footer__tagline">The electric cargo moped<br>built for real life.</p>
+                    <p class="footer__origin">Designed &amp; made in California 🇺🇸</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#specs">Specifications</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Get in Touch</h4>
+                        <a href="#reserve">Join Waitlist</a>
+                        <a href="#faq">Test Rides — SF Bay Area</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Carry Mopeds, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
