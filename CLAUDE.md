@@ -54,7 +54,7 @@ Product and lifestyle photos are in `images/`. All are PNGs sourced from `/home/
 
 ## Specs
 - Powerful 4kw motor
-- Full suspension so it rides like a motorcycle
+- Full suspension so it soaks every bump
 - Step through cradle frame so you use it to store school or grocery bags and toys
 - Long wheelbase for extra stability
 - Kids wiggling in the back doesn't mean your bike has to - a big complaint many cargo bike riders have is that bigger kids can cause serious wiggles and make the bike feel unsafe. Not with this one. 
