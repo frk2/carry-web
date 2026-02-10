@@ -703,6 +703,53 @@ ul { list-style: none; }
 
 
 /* ============================================================
+   CALLOUT BANNER
+   ============================================================ */
+.callout {
+    margin-bottom: var(--space-3xl);
+}
+
+.callout__inner {
+    background: var(--color-dark);
+    border-radius: var(--radius-lg);
+    padding: clamp(2.5rem, 5vw, 4rem) clamp(2rem, 5vw, 5rem);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.callout__inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.callout__title {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto var(--space-md);
+}
+
+.callout__text {
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: var(--color-steel);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* ============================================================
    GALLERY
    ============================================================ */
 .gallery {
